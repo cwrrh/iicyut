@@ -15,13 +15,12 @@ function randomDate() {
   let month = Math.randomRange(1, maxMonth);
   let maxDays = moment(`${year}-${month}`, "YYYY-MM").daysInMonth();
   let day = Math.randomRange(1, maxDays);
-  console.log(year, month, day);
   return `${year}-${month}-${day}`;
 }
 
 $.ajax({
   type: "get",
-  url: "http://open.iciba.com/dsapi",
+  url: "https://open.iciba.com/dsapi",
   data: {
     date: randomDate()
   },
