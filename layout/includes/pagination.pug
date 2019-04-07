@@ -1,0 +1,8 @@
+if page.prev || page.next
+nav.post-nav
+  if page.prev
+    span.prev
+      a(href=page.prev_link) #[span.arrow ←] Newer Posts
+  if page.next
+    span.next
+      a(href=page.next_link) Older Posts #[span.arrow →]

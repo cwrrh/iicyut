@@ -1,0 +1,34 @@
+.home
+  min-height: 25rem;
+  max-width: 37.5rem !important;
+
+  #word
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    line-height: .75rem;
+    margin: 3.125rem 0 1.5625rem;
+    display: block;
+
+  .recent-posts
+    &-item
+      display: flex;
+
+      a
+        font-size: 1.0625rem;
+        line-height: 1.0625rem;
+        text-decoration: none;
+        color: #494949;
+
+        &:hover
+          & + span
+            opacity: 1;
+
+      span
+        font-size: .875rem;
+        margin-left: 1.5625rem;
+        color: #AAAAAA;
+        opacity: 0;
+        transition: all .2s;
+
+  .post-nav
+    margin-top: 3.75rem

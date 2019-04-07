@@ -1,5 +1,12 @@
-extends includes/layout.pug
+extends common/layout.pug
 
 block content
-  include includes/recent-posts.pug
-  #paginator!= paginator()
+  span#word
+  if page.posts.length > 0
+    .recent-posts
+      each post in page.posts.sort('date', -1).limit(10).toArray()
+        .recent-posts-item
+          a(href=url_for(post.path))= post.title
+          if post.date
+            span(class="dates")= date(post.date, date_format)
+  include includes/pagination.pug
