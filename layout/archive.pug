@@ -7,7 +7,7 @@ block content
     - var year = post.date.year()
     if yearPosts[year] === undefined
       - yearPosts[year] = []
-    - yearPosts[year].push(post)
+    - yearPosts[year].unshift(post)
 
   h1 Archives
 
@@ -18,4 +18,4 @@ block content
         each post in value
           li
             span= moment(post.date).format("MMM D")
-            a(href=`${config.root}${post.path}`) post.title
+            a(href=`${config.root}${post.path}`)= post.title

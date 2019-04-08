@@ -7,6 +7,8 @@
 - if (is_home()) pageClass = " home"
 - if (is_archive()) pageClass = " archive"
 - if (is_post()) pageClass = " post"
+- if (page.title === "about") pageClass = " about"
+- if (page.title === "tags") pageClass = " tags"
 
 doctype html
 html(lang=config.language)

@@ -5,14 +5,18 @@
   #word
     min-height: .75rem;
     font-size: .75rem;
-    letter-spacing: .0625rem;
     line-height: .75rem;
+    letter-spacing: .0625rem;
     margin: 3.125rem 0 1.5625rem;
     display: block;
 
   .recent-posts
     &-item
       display: flex;
+      margin-bottom: .625rem;
+
+      &:last-child
+        margin-bottom: 0;
 
       a
         font-size: 1.0625rem;
@@ -26,6 +30,7 @@
 
       span
         font-size: .875rem;
+        line-height: .875rem;
         margin-left: 1.5625rem;
         color: #AAAAAA;
         opacity: 0;

@@ -1,7 +1,7 @@
 extends common/layout.pug
 
 block content
-  article#page
-    h1= page.title
-    != page.content
-  #paginator!= paginator()
+  if (page.title === "about")
+    include includes/about.pug
+  if (page.title === "tags")
+    include includes/tags.pug

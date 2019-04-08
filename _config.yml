@@ -5,8 +5,8 @@ language: en
 # main menu navigation
 menu:
   Home: /
+  Tags: /tags
   About: /about
-  Contact: /contact
   Archives: /archives
 
 # stylesheets loaded in the <head>
